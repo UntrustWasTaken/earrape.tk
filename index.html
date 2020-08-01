@@ -11,14 +11,35 @@
 <video width="320" height="240" controls>
   <source src="f25.mp4" type="video/mp4">
 </video>
-  <button type="button">
-    <audio controls>
-  <
-  <source src="microwave.mp3" type="audio/mpeg">
-  Your browser does not support the audio tag.
-</audio>
+
+<style>
+.button {
   
-  </button>
+  padding: 30px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<div>
+
+<script>
+var microwave = new Audio();
+microwave.src = "microwave.mp3";
+function PlaySound() {
+    microwave.play();
+}
+</script>
+</head>
+<body>
+<audio id="microwave"> </audio>
+<input type="button" class="button" value="foil" onclick="PlaySound()">
+
+
+</div>
   
 </body>
   
