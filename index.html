@@ -37,6 +37,18 @@ function PlaySound() {
 <body>
 <audio id="microwave"> </audio>
 <input type="button" class="button" value="foil" onclick="PlaySound()">
+  
+<script>
+var microwave = new Audio();
+microwave.src = "microwave.mp3";
+function PlaySound() {
+    microwave.play();
+}
+</script>
+</head>
+<body>
+<audio id="chinarap"> </audio>
+<input type="button" class="button" value="good song" onclick="PlaySound()">
 </div>
   
 
