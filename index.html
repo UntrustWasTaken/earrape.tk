@@ -37,7 +37,32 @@
   cursor: pointer;
 }
 </style>
-
+  
+<style>
+.button3 {
+  
+  padding: 30px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+  
+<style>
+.button4 {
+  
+  padding: 30px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
 <div>
 
 <script>
@@ -62,12 +87,37 @@ function PlaySound2() {
 </head>
 <body>
 <audio id="chinarap"> </audio>
-<input type="button" class="button2" value="good song" onclick="PlaySound2()">
+<input type="button" class="button" value="good song" onclick="PlaySound2()">
+  
+<script>
+var mp3 = new Audio();
+mp3.src = "mp3.mp3";
+function PlaySound3() {
+    mp3.play();
+}
+</script>
+</head>
+<body>
+<audio id="mp3"> </audio>
+<input type="button" class="button" value="mp3mp3" onclick="PlaySound3()">
+  
+<script>
+var very_nice1_01 = new Audio();
+very_nice1_01.src = "very_nice1_01.mp3";
+function PlaySound4() {
+    very_nice1_01.play();
+}
+</script>
+</head>
+<body>
+<audio id="very_nice1_01"> </audio>
+<input type="button" class="button" value="very_nice1_01" onclick="PlaySound4()">
+  
 </div>
   
 
   
-<div>v1.7</div>  
+<div>v1.8</div>  
 
     
 </body>
